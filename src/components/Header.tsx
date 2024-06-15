@@ -11,12 +11,12 @@ export function Header() {
   return (
     <header className="relative xl:w-full flex items-center h-20 bg-primary-orange">
       <div className="absolute top-0 right-0 bg-primary-blue w-[19%] h-full z-0"></div>
-      <Container>
-        <div className="flex flex1 justify-between items-center gap-6">
-          <div className="flex items-center gap-14">
+      <div className="flex items-center justify-between w-full max-w-[1280px] px-[15px] mx-auto h-auto">
+        <div className="flex flex1 justify-between items-center gap-6 custom-smm:max-w-[60%]">
+          <div className="flex items-center lg:text-base lg:gap-14 md:gap-3 md:text-[13px] custom-smm:flex-col  custom-smm:items-start custom-smm:gap-1">
             <Image className="cursor-pointer" src={Logo} alt="Logo" />
 
-            <ul className="flex items-center xl:gap-12 lg:gap-2">
+            <ul className="flex md:visible custom-smm:hidden items-center gap-8 md:gap-4 ">
               <li>
                 <ItemMenu name="Para você" />
               </li>
@@ -33,14 +33,16 @@ export function Header() {
                 <ItemMenu name="Ajuda" />
               </li>
             </ul>
+
+            <Search />
           </div>
         </div>
-        <Search />
-        <button className="flex items-center gap-4 bg-primary-blue h-20 pl-10 z-10">
+
+        <button className="flex items-center md:text-[13px] custom-smm:text-[13px] gap-4 bg-primary-blue h-20 pl-10 z-10">
           <Image src={IconUser} alt="icone de usuario" />
           <span className="text-white font-bold">Acessar conta</span>
         </button>
-      </Container>
+      </div>
     </header>
   );
 }

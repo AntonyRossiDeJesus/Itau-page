@@ -7,7 +7,7 @@ type Props = {
 
 export function ItemMenu({ name }: Props) {
   return (
-    <button className="flex items-center gap-3">
+    <button className="flex items-center gap-3 md:gap-[5px] custom-smm:invisible">
       <span className="text-white font-bold">{name}</span>
       <Image src={Arrow} alt="icone de seta para baixo" />
     </button>

@@ -10,8 +10,8 @@ export function SectionHero() {
   return (
     <section className="w-full h-auto bg-img_bg_hero bg-no-repeat bg-center bg-cover">
       <Container>
-        <div className="flex-1 max-w-[50%]">
-          <h1 className="text-white sm:text-5xl xl:text-7xl font-bold mb-4">
+        <div className="flex-1 max-w-[50%] custom-smm:max-w-full custom-smm:flex custom-smm:flex-col custom-smm:items-center custom-smm:pt-10 ">
+          <h1 className="text-white xl:text-7xl lg:text-5xl md:text-5xl custom-smm:text-4xl custom-smm:text-center font-bold mb-4">
             Tenha seu Banco na palma da mão.
           </h1>
 

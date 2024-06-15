@@ -10,13 +10,13 @@ import ImagePhone from "@/assets/phone.png";
 
 export function SectionServices() {
   return (
-    <section className="relative w-full h-[965px] ">
+    <section className="relative w-full h-[965px]">
       <Container>
-        <div className="flex-1 max-w-[594px] pt-32">
-          <span className="block text-primary-orange text-sm font-bold uppercase mb-9">
+        <div className="flex-1 lg:max-w-[594px] pt-32 md:max-w-[60%] md:pb-10 md:pt-20 custom-smm:max-w-[320px] custom-smm:p-3 ">
+          <span className="block text-primary-orange text-sm font-bold uppercase mb-9 custom-smm:text-center">
             serviços exclusivos
           </span>
-          <h2 className="text-primary-gray text-[56px] font-bold leading-tight mb-6">
+          <h2 className="text-primary-gray text-[56px] font-bold leading-tight mb-6 custom-smm:text-base">
             Gerencie suas finanças sem sair de casa
           </h2>
           <p className="text-lg max-w-[554px] mb-16 text-second-gray">
@@ -68,11 +68,11 @@ export function SectionServices() {
         </div>
       </Container>
 
-      <div className="absolute top-0 right-0 flex items-center w-[32%] h-full bg-gray-phone ">
+      <div className="absolute top-0 right-0 flex items-center w-[32%] h-full bg-gray-phone lg:w-[24%] md:w-[25%] custom-smm:invisible">
         <Image
           src={ImagePhone}
           alt="imagem do telefone"
-          className="translate-x-[-50%]"
+          className="xl:translate-x-[-50%] lg:translate-x-[-50%] md:translate-x-[-50%] truncate"
         />
       </div>
     </section>
